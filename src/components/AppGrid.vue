@@ -29,25 +29,25 @@ export default {
                     testo:'dc merchandise',
                     img: require("../assets/images/buy-comics-merchandise.png"),
                     link: '',
-                    active: true,
+                    active: false,
                 },
                 {
                     testo:'subscription',
                     img: require("../assets/images/buy-comics-subscriptions.png"),
                     link: '',
-                    active: true,
+                    active: false,
                 },
                 {
                     testo:'comic shop locator',
                     img: require("../assets/images/buy-comics-shop-locator.png"),
                     link: '',
-                    active: true,
+                    active: false,
                 },
                 {
                     testo:'dc power visa',
                     img: require("../assets/images/buy-dc-power-visa.svg"),
                     link: '',
-                    active: true,
+                    active: false,
                 },
             ]
         }
