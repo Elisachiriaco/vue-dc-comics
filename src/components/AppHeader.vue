@@ -76,6 +76,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import '../style/variables';
+@import '../style/generals';
 
 .logo{
   display: flex;
@@ -96,6 +97,8 @@ nav{
     display:inline-block;
     justify-content: space-around;
     padding: 12px;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .selected{

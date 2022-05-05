@@ -21,20 +21,20 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/variables';
+@import '../style/generals';
 
 .card{
-    display: inline-block;
-    margin: 0px 30px 60px;
+    margin: 0px 20px 60px;
     img{
-        // width: 160px;
-        height: 170px;
-        // margin: 0px 30px;
+        height: 150px;
+        width: 150px;
     }
-         h2{
-        // padding: 10px 0;
+    h2{
+        padding-top: 10px;
         color: $bgwhite;
-        font-size: 10px;
+        font-size: 12px;
         text-transform: uppercase;
+        width: 160px;
     }
 }
 </style>

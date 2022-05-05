@@ -4,9 +4,11 @@
             <ul>
                 <li><h3>Dc comics</h3></li>
                 <li v-for="(link,index) in comics" :key="index">{{link.testo}}</li>
+                <ul class="shop">
                 <li><h3>Shop</h3></li>
                 <li v-for="(link,index) in shop" :key="index">{{link.testo}}</li>
             </ul>
+             </ul>
 
             <ul>
                 <li><h3>Dc</h3></li>
@@ -197,6 +199,7 @@ export default {
 
 <style lang="scss">
 @import '../style/variables';
+@import '../style/generals';
 
 .footer-top{
     background-image: url("../assets/images/footer-bg.jpg");
@@ -209,7 +212,10 @@ export default {
 
     ul{
         list-style-type: none;
-        padding: 0px 20px;
+        padding: 0px 30px;
+    }
+    .shop{
+        margin-left: -30px;
     }
     h3{
         color: $bgwhite;

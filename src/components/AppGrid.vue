@@ -5,7 +5,13 @@
         </div>
 
         <div class="content">
+            <div class="title">
+                <h1>Current Series</h1>
+            </div>
             <ProductCard v-for="(card,index) in cards" :key="index" :detail="card" />
+            <div class="button">
+                <a href="#">Load more</a>
+            </div>
         </div>
 
         <div class="image-container">
@@ -140,6 +146,8 @@ export default {
 
 <style lang="scss">
 @import '../style/variables';
+@import '../style/generals';
+
 .jumbotron{
     height: 300px;
     img{
@@ -151,11 +159,39 @@ export default {
 }
 
 .content{
-    background-color: $bgblack;
-    padding: 80px 30px;
+    background-color: $bgmain;
+    padding: 80px 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
 
-    h1{
-    color: $bgwhite;
+    .title{
+        position: absolute;
+        top: -15px;
+        left: 25px;
+        width: 200px;
+        height: 50px;
+        color: $bgwhite;
+        background-color: $bgazzurro;
+        font-size: 10px;
+        text-align: center;
+        line-height: 50px;
+        text-transform: uppercase;
+        box-shadow: 0px 2px 2px 2px $bgmain;
+    }
+    .button{
+        background-color: $bgazzurro;
+        width: 170px;
+        height: 50px; 
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+    a{
+        color: $bgwhite;
+        font-size: 14px;
+    }
     }
 }
 
