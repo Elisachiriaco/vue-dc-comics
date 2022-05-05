@@ -81,6 +81,9 @@ export default {
   display: flex;
   margin: 10px;
   justify-content: space-around;
+    img{
+      width: 5%;
+    }
 }
 nav{
     background-color: $bgwhite;
